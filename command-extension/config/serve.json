@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://orcasvn.sharepoint.com/sites/TestTeamSite-Ha/Lists/Cars/AllItems.aspx",
+      "customActions": {
+        "d2d982a7-ebab-40be-8717-dee180892b66": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    },
+    "helloWorld": {
+      "pageUrl": "https://orcasvn.sharepoint.com/sites/TestTeamSite-Ha/Lists/Cars/AllItems.aspx",
+      "customActions": {
+        "d2d982a7-ebab-40be-8717-dee180892b66": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    }
+  }
+}

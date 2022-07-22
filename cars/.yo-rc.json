@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.0",
+    "libraryName": "cars",
+    "libraryId": "ed8b7700-b70c-47b3-87ab-0df409f6eb4a",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "cars",
+    "solutionShortDescription": "cars description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

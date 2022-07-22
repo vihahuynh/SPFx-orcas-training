@@ -1,0 +1,81 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.cars {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+
+}
+
+* {
+  margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.carContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carItem {
+  width: 30rem;
+  border: 2px solid "[theme: themeDark, default: #fff]";
+  // border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 2rem 1rem;
+  color: "[theme: themeDark, default: black]";
+  background-color: "[theme: themeLighterAlt, default: white]";
+
+  &:hover {
+    background-color: "[theme: themeLight, default: white]"
+  }
+}
+
+.carImg {
+  width: 20rem;
+
+}
+.carTitle{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600
+
+}
+
+.carPrice, .carBrand{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.filter {
+  font-size: 1.3rem;
+  text-align: center;
+  color: "[theme: themeDark, default: black]"
+}
+
+.tagList {
+  margin-top: 1rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tagItem {
+  color: "[theme: themeDarkAlt, default: grey]";
+  background-color: "[theme: themeLighter, default: lightgrey]";
+  border: 1px solid "[theme: themeDarkAlt, default: grey]";
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.7rem;
+  margin: .3rem;
+}
+

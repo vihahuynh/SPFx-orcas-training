@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://orcasvn.sharepoint.com/sites/TestTeamSite-Ha/Lists/Orders/AllItems.aspx",
+      "fieldCustomizers": {
+        "Percent": {
+          "id": "676104d3-c2e7-41d8-8a1a-f4e8b93ef91b",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    },
+    "helloWorld": {
+      "pageUrl": "https://orcasvn.sharepoint.com/sites/TestTeamSite-Ha/Lists/Orders/AllItems.aspx",
+      "fieldCustomizers": {
+        "Percent": {
+          "id": "676104d3-c2e7-41d8-8a1a-f4e8b93ef91b",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    }
+  }
+}

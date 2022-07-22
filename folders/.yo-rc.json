@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.0",
+    "libraryName": "folders",
+    "libraryId": "ebcdfbb3-1b31-4361-9645-720cca33b6ac",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "folders",
+    "solutionShortDescription": "folders description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

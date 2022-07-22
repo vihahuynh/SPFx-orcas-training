@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "helloworld-client-side-solution",
+    "id": "9b97b59c-ef6d-4c49-bd20-06bcd8200847",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Helloworld description"
+      },
+      "longDescription": {
+        "default": "Helloworld description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "helloworld Feature",
+        "description": "The feature that activates elements of the helloworld solution.",
+        "id": "5e6e7dbd-f7f9-4820-b156-5c0a7e7bf33c",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/helloworld.sppkg"
+  }
+}

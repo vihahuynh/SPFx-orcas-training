@@ -1,0 +1,17 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.0",
+    "libraryName": "custom-dialog",
+    "libraryId": "b18747ec-795e-4302-8958-ed9975cb98f9",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "custom-dialog",
+    "solutionShortDescription": "custom-dialog description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "ListViewCommandSet"
+  }
+}

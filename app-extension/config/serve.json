@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://orcasvn.sharepoint.com/sites/TestTeamSite-Ha/SitePages/CollabHome.aspx",
+      "customActions": {
+        "a2800149-4c2d-4f6b-a699-fda984310d2b": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": "Top area of the page",
+            "Bottom": "Bottom area of the page"
+          }
+        }
+      }
+    },
+    "helloWorld": {
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "customActions": {
+        "a2800149-4c2d-4f6b-a699-fda984310d2b": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": "Top area of the page",
+            "Bottom": "Bottom area of the page"
+          }
+        }
+      }
+    }
+  }
+}

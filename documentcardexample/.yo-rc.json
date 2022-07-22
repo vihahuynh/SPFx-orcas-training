@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.0",
+    "libraryName": "documentcardexample",
+    "libraryId": "f7d899ae-c742-486e-bef1-0804740a3c2a",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "documentcardexample",
+    "solutionShortDescription": "documentcardexample description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
