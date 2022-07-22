@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.0",
+    "libraryName": "taxonomy-picker-demo",
+    "libraryId": "f6163d79-cbbe-4816-972e-ac8a8603a06e",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "taxonomy-picker-demo",
+    "solutionShortDescription": "taxonomy-picker-demo description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

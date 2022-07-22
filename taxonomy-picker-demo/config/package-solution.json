@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "taxonomy-picker-demo-client-side-solution",
+    "id": "f6163d79-cbbe-4816-972e-ac8a8603a06e",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "taxonomy-picker-demo description"
+      },
+      "longDescription": {
+        "default": "taxonomy-picker-demo description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "taxonomy-picker-demo Feature",
+        "description": "The feature that activates elements of the taxonomy-picker-demo solution.",
+        "id": "26e667b7-b2f6-40c6-82e0-b80ba08a2f49",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/taxonomy-picker-demo.sppkg"
+  }
+}
