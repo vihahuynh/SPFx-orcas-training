@@ -1,32 +1,32 @@
-interface Picture {
+interface IPicture {
   Url: string,
   Description: string
 }
 
-interface Brand {
+interface IBrand {
   Title: string
 }
 
-interface Tag {
+interface ITag {
   Label: string,
   TermGuid: string,
   WssIs: number
 }
 
-export interface Car {
-  Brand: Brand
+export interface ICar {
+  Brand: IBrand
   ID: number,
   Title: string,
   BrandId: number,
   Price: number,
   Color: string,
-  Tags: Tag[],
+  Tags: ITag[],
   Description: string,
-  Picture: Picture,
+  Picture: IPicture,
 }
 
 export interface ICarsProps {
-  cars: Car[],
+  cars: ICar[],
   brand: string,
   description: string,
   isDarkTheme: boolean;

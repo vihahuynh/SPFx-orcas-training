@@ -4,6 +4,6 @@
         Title="HelloWorld"
         Location="ClientSideExtension.ApplicationCustomizer"
         ClientSideComponentId="a2800149-4c2d-4f6b-a699-fda984310d2b"
-        ClientSideComponentProperties="{&quot;Top&quot;:&quot;Top area of the page&quot;,&quot;Bottom&quot;:&quot;Bottom area in the page&quot;}">
+        ClientSideComponentProperties="{&quot;Top&quot;:&quot;Extension (Application Customizer): Top area of the page&quot;,&quot;Bottom&quot;:&quot;Extension (Application Customizer): Bottom area in the page&quot;}">
     </CustomAction>
 </Elements>

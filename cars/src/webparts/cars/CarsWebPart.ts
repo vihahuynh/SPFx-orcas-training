@@ -17,7 +17,7 @@ export interface ICarsWebPartProps {
   brand: string
 }
 
-
+import pnp from 'sp-pnp-js'
 
 export default class CarsWebPart extends BaseClientSideWebPart<ICarsWebPartProps> {
 
@@ -44,7 +44,9 @@ export default class CarsWebPart extends BaseClientSideWebPart<ICarsWebPartProps
   protected onInit(): Promise<void> {
     this._environmentMessage = this._getEnvironmentMessage();
 
-    return super.onInit();
+    return super.onInit().then(() => pnp.setup({
+      spfxContext: this.context
+    }))
   }
 
   private _getEnvironmentMessage(): string {

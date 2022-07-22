@@ -4,13 +4,13 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://orcasvn.sharepoint.com/sites/TestTeamSite-Ha/SitePages/CollabHome.aspx",
+      "pageUrl": "https://orcasvn.sharepoint.com/sites/TestTeamSite-Ha/SitePages/Cars.aspx",
       "customActions": {
         "a2800149-4c2d-4f6b-a699-fda984310d2b": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "Top": "Top area of the page",
-            "Bottom": "Bottom area of the page"
+            "Top": "Extension (Application Customizer): Top area of the page",
+            "Bottom": "Extension (Application Customizer): Bottom area of the page"
           }
         }
       }
@@ -21,8 +21,8 @@
         "a2800149-4c2d-4f6b-a699-fda984310d2b": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "Top": "Top area of the page",
-            "Bottom": "Bottom area of the page"
+            "Top": "Extension (Application Customizer): Top area of the page",
+            "Bottom": " Extension (Application Customizer): Bottom area of the page"
           }
         }
       }
