@@ -1,14 +1,19 @@
 import * as React from 'react';
 import styles from './Cars.module.scss';
-import { ICarsProps, ICar } from './ICarsProps';
+import { ICarsProps, ICar, ITag } from './ICarsProps';
+import { ICarsState } from './ICarsState';
+
+import { TaxonomyPicker, IPickerTerms } from "@pnp/spfx-controls-react/lib/TaxonomyPicker";
 
 import pnp from "sp-pnp-js";
+
 // import { DocumentCard, DocumentCardImage, DocumentCardDetails, DocumentCardTitle, ImageFit, IDocumentCardStyles } from 'office-ui-fabric-react';
 
-export default class Cars extends React.Component<ICarsProps, {cars: ICar[]}> {
+export default class Cars extends React.Component<ICarsProps, ICarsState> {
   public constructor (props: ICarsProps){
     super(props);
     this.state = {
+      selectedTerms: [],
       cars: []
     }
     this._getCarItems()
@@ -23,23 +28,33 @@ export default class Cars extends React.Component<ICarsProps, {cars: ICar[]}> {
     .catch((err) => console.log(err))
   }  
 
- 
+  private _onTaxPickerChange(terms : IPickerTerms) {
+    this.setState({selectedTerms: terms})
+  }
+  
+  private _checkIntersection = (car: ICar, terms: IPickerTerms): boolean => car.Tags.filter(tag => terms.some(term => term.name === tag.Label)).length > 0
+
   public render(): React.ReactElement {
     const {brand} = this.props;
 
     let filteredCars: ICar[];
-    if (!brand) filteredCars = this.state.cars
-    else {
-      filteredCars = this.state.cars.filter(car => car.Brand.Title.toLowerCase().indexOf(brand.toLowerCase()) !== -1)
-    }
+    const filterBrands = (car: ICar): boolean => brand ? car.Brand.Title.toLowerCase().indexOf(brand.toLowerCase()) !== -1 : true
+    const filterTags = (car: ICar, terms: IPickerTerms): boolean => this.state.selectedTerms.length !== 0 ? this._checkIntersection(car, terms) : true
 
-    // const cardStyles: IDocumentCardStyles = {
-    //   root: { display: 'inline-block', marginTop: 20, marginRight: 20, width: 400 },
-    // };
+    filteredCars = this.state.cars.filter(car => filterBrands(car) && filterTags(car, this.state.selectedTerms))
 
     return (
       <section className={styles.cars}>
           <div className={styles.filter}>{`Filter by brand: ${brand ? brand : 'All brand'}`}</div>
+
+          <TaxonomyPicker allowMultipleSelections={true}
+                termsetNameOrID="Features"
+                panelTitle="Select Term"
+                label="Filter by tags"
+                context={this.props.context}
+                onChange={this._onTaxPickerChange.bind(this)}
+                isTermSetSelectable={false} />
+
           <div className={styles.carContainer}>
           {filteredCars.length ? filteredCars
           .map(car => <div className={styles.carItem} key={car.ID}>

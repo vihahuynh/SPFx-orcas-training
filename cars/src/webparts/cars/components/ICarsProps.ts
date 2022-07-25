@@ -7,7 +7,7 @@ interface IBrand {
   Title: string
 }
 
-interface ITag {
+export interface ITag {
   Label: string,
   TermGuid: string,
   WssIs: number
@@ -26,12 +26,13 @@ export interface ICar {
 }
 
 export interface ICarsProps {
-  cars: ICar[],
+  // cars: ICar[],
   brand: string,
   description: string,
   isDarkTheme: boolean;
   environmentMessage: string,
   hasTeamsContext: boolean,
   userDisplayName: string,
+  context: any
   
 }

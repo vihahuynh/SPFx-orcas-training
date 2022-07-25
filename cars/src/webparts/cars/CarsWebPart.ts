@@ -28,14 +28,15 @@ export default class CarsWebPart extends BaseClientSideWebPart<ICarsWebPartProps
     const element: React.ReactElement<ICarsProps> = React.createElement(
       Cars,
       {
-        cars: [],
         description: this.properties.description,
         brand: this.properties.brand,
         isDarkTheme: this._isDarkTheme,
         environmentMessage: this._environmentMessage,
         hasTeamsContext: !!this.context.sdks.microsoftTeams,
-        userDisplayName: this.context.pageContext.user.displayName
-      }
+        userDisplayName: this.context.pageContext.user.displayName,
+        context: this.context
+      },
+      {cars: [], selectedTerms: []}
     );
 
     ReactDom.render(element, this.domElement);
