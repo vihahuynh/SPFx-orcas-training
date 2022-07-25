@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.0",
+    "libraryName": "teams-tab",
+    "libraryId": "bd05c83a-6c88-4526-a52b-09380b53aa1a",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "teams-tab",
+    "solutionShortDescription": "teams-tab description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
