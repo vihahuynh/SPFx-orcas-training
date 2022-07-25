@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "search-api-demo-client-side-solution",
+    "id": "8c293eb7-69c6-46d7-bed2-be7033c28bc8",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "search-api-demo description"
+      },
+      "longDescription": {
+        "default": "search-api-demo description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "search-api-demo Feature",
+        "description": "The feature that activates elements of the search-api-demo solution.",
+        "id": "b35c5e76-2d17-4b2d-8cfc-a07170dfa544",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/search-api-demo.sppkg"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.0",
+    "libraryName": "search-api-demo",
+    "libraryId": "8c293eb7-69c6-46d7-bed2-be7033c28bc8",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "search-api-demo",
+    "solutionShortDescription": "search-api-demo description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
