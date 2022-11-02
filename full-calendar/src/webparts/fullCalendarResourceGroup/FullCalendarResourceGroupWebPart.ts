@@ -5,7 +5,7 @@ import {
   IPropertyPaneConfiguration,
   PropertyPaneTextField
 } from '@microsoft/sp-property-pane';
-import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
+import { BaseClientSideWebPart, WebPartContext } from '@microsoft/sp-webpart-base';
 import { IReadonlyTheme } from '@microsoft/sp-component-base';
 
 import * as strings from 'FullCalendarResourceGroupWebPartStrings';
@@ -25,11 +25,7 @@ export default class FullCalendarResourceGroupWebPart extends BaseClientSideWebP
     const element: React.ReactElement<IFullCalendarResourceGroupProps> = React.createElement(
       FullCalendarResourceGroup,
       {
-        // description: this.properties.description,
-        // isDarkTheme: this._isDarkTheme,
-        // environmentMessage: this._environmentMessage,
-        // hasTeamsContext: !!this.context.sdks.microsoftTeams,
-        // userDisplayName: this.context.pageContext.user.displayName
+        webPartCtx: this.context
       }
     );
 

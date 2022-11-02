@@ -25,6 +25,7 @@ export default class FullCalendarWebPart extends BaseClientSideWebPart<IFullCale
     const element: React.ReactElement<IFullCalendarProps> = React.createElement(
       FullCalendarComponent,
       {
+        webPartCtx: this.context
       }
     );
 
