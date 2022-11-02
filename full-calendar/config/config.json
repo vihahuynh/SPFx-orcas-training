@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "full-calendar-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/fullCalendar/FullCalendarWebPart.js",
+          "manifest": "./src/webparts/fullCalendar/FullCalendarWebPart.manifest.json"
+        }
+      ]
+    },
+    "full-calendar-resource-group-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/fullCalendarResourceGroup/FullCalendarResourceGroupWebPart.js",
+          "manifest": "./src/webparts/fullCalendarResourceGroup/FullCalendarResourceGroupWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "FullCalendarWebPartStrings": "lib/webparts/fullCalendar/loc/{locale}.js",
+    "FullCalendarResourceGroupWebPartStrings": "lib/webparts/fullCalendarResourceGroup/loc/{locale}.js"
+  }
+}

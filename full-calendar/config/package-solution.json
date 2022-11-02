@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "full-calendar-client-side-solution",
+    "id": "ee582447-e7b2-408b-8328-8d97ca46fe2a",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "full-calendar description"
+      },
+      "longDescription": {
+        "default": "full-calendar description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "full-calendar Feature",
+        "description": "The feature that activates elements of the full-calendar solution.",
+        "id": "8cfc4b52-bf4f-43bb-b7b7-f26d35e6db7a",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/full-calendar.sppkg"
+  }
+}

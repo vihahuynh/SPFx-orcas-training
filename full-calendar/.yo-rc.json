@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "version": "1.15.0",
+    "libraryName": "full-calendar",
+    "libraryId": "ee582447-e7b2-408b-8328-8d97ca46fe2a",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "full-calendar",
+    "solutionShortDescription": "full-calendar description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
